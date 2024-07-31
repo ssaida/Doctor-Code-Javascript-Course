@@ -158,7 +158,18 @@ if (triangleFace1 === triangleFace2 && triangleFace1 === triangleFace3) {
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-      
+        let triangleFace1 = +prompt('Enter triangle dace 1:');
+        let triangleFace2 = +prompt('Enter triangle dace 2:');
+        let triangleFace3 = +prompt('Enter triangle dace 3:');
+
+        if(triangleFace1 === triangleFace2){
+          alert('Isosceles triangle')
+        }else if(triangleFace1 === triangleFace2 && triangleFace1 === triangleFace3){
+          alert('Equilateral triangle')
+        }
+        else{
+          alert('Science triangle');
+        }
       };
     </script>
     <script>
