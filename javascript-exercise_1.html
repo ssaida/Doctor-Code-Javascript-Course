@@ -134,12 +134,13 @@
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-      //  TODO
-     let numA = +prompt('Enter num A:');
-     alert(`${numA} * ${numA} = ${Math.pow(numA, 2)}`);;
-     let numB = +prompt('Enter num B:');
-     let expo = +prompt('Enter expo:');
-     alert(`${numB} with exponent power of ${expo} is: ${Math.pow(numB, expo)}`);
+        //  TODO
+        let numA = +prompt('Enter Num A:');
+        let result = Math.pow(numA, numA);
+        alert(`${numA} * ${numA} = ${result}`);
+        let numB = +prompt('Enter Num B:');
+        let expo = +prompt('Enter Expo');
+        alert(`${numB} with exponent power of ${expo} is: ${Math.pow(numB, expo)}`);
       }
     </script>
     <script>
