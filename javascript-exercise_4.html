@@ -147,10 +147,9 @@ console.log(partialValue + ' ' + 'is' + ' ' + percentage.toFixed(2) + '%' + ' ' 
     <script>
       const onSolution = () => {
       // TODO
-      let partialValue = +prompt('Enter partial value:');
+      let partialValue = +prompt('Enter Partial:');
       let totalValue = +prompt('Enter total value:');
-      let percentage = 100 / totalValue * partialValue;
-      alert(`${partialValue} is ${percentage.toFixed(3)}% of ${totalValue}`);
+      alert(`${partialValue} is ${(partialValue / totalValue * 100).toFixed(3)}% of ${totalValue}`)
       };
     </script>
     <script>
