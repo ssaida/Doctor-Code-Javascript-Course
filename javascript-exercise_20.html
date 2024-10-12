@@ -156,7 +156,13 @@ const getRandomNumber = () => {
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        
+        const getRandomNumber = () => {
+          let min = +prompt('Enter min number')
+          let max = +prompt('Enter max number')
+          min = Math.ceil(min)
+          max = Math.floor(max)
+          return Math.floor(Math.random() * (max - min + 1) + min)
+      }
       };
     </script>
     <script>

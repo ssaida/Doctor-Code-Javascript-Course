@@ -164,7 +164,26 @@ init()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        
+        let numOfRows = +prompt('how many rows?')
+let numOfSymbols = +prompt('how many items per row?')
+let symbol = '*'
+
+const init = () => {
+    for (let i = 0; i < numOfRows; i++) {
+        printAsterisks(numOfSymbols)
+    }
+}
+
+const printAsterisks = (numOfPrints) => {
+    let currChar = `${symbol}`
+    for (let i = 1; i < numOfPrints; i++) {
+        currChar += symbol
+    }
+    console.log(currChar)
+}
+
+init()
+
       };
     </script>
     <script>
