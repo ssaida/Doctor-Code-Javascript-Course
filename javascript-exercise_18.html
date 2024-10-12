@@ -169,13 +169,21 @@ init()
     <script>
       const onSolution = () => {
         // TODO
-        for(let i=1;i<=10;i++){
-          let row = ``;
-          for(let j=1;j<=10;j++){
-            row += `${i * j}\t`
-          } 
-          console.log(row);
+        const printAstrisks = numOfPrints => {
+          let currChar = '*';
+          for(let i=0;i<numOfPrints;i++){
+            currChar += '*';
+          }
+          console.log(currChar)
         }
+        const init = () => {
+          const trianglrSize = +prompt('Enter Triangle Size:');
+          for(let i=1;i<trianglrSize;i++)
+            printAstrisks(i) 
+          for(let i=trianglrSize;i > 0;i--)
+            printAstrisks(i)
+        }
+        init()
       };
     </script>
     <script>
