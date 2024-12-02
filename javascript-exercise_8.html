@@ -195,18 +195,18 @@ if (daysUntilFriday === 0) {
     <script>
       const onSolution = () => {
         /* todo remove this line and star t your answer */
-        let day = +prompt('Enter day in a week as number between 1 - 7');
+        let day = +prompt('Enter a day as number between 1 - 7:');
         switch(day){
-          case 1: alert(`It's ${6 - day} days until friday!`);break;
-          case 2: alert(`It's ${6 - day} days until friday!`);break;
-          case 3: alert(`It's ${6 - day} days until friday!`);break;
-          case 4: alert(`It's ${6 - day} days until friday!`);break;
-          case 5: alert(`It's ${6 - day} days until friday!`);
-                  alert('Friday is tomorrow!');
+          case 1: alert(`It's ${6 - day} until friday!`);break;
+          case 2: alert(`It's ${6 - day} until friday!`);break;
+          case 3: alert(`It's ${6 - day} until friday!`);break;
+          case 4: alert(`It's ${6 - day} until friday!`);break;
+          case 5: alert(`It's ${6 - day} until friday!`);
+                  alert("Friday is tomorrow!");
                   break;
-          case 6: alert('Friday is today!');break;
-          case 7: alert(`It's ${day - 1} days until friday!`);break;
-          default:  alert("is it maayan calendar day or what?");
+          case 6: alert('Today is friday!');break;
+          case 7: alert(`It's ${day - 1} until friday!`);break;
+          default: alert("is it maayan calendar day or what?");
         }
       };
     </script>
