@@ -160,15 +160,15 @@ typeOf(val)
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-       let val = +prompt('Enter Val:');
-       function typeOfVal(value){
+       let val = prompt('Enter something:');
+       function typeOf(value){
         if(value === 'false' || value === 'true')
           alert('Boolean');
         else if(+value)
-          alert('Number')
-        else alert('String')
+          alert(`Type is number`);
+        else alert('String');
        }
-       typeOfVal(val);
+       typeOf(val);
       };
     </script>
     <script>
